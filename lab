@@ -1,0 +1,32 @@
+class Vehicle {
+    constructor (capacity, color, mileage) {
+      this.capacity = capacity;
+      this.color = color;
+      this.mileage = mileage;
+    }
+  
+    move(miles) {
+      console.log(this.mileage += miles);
+    }  
+  }
+
+  
+let myFirstVehicle = new Vehicle(5, 'black', 2340);
+
+
+myFirstVehicle.move(45)
+
+myFirstVehicle.move(15);
+
+
+class Motorcycle extends Vehicle {
+    constructor (super, make, isCool) {
+      super;
+      this.make = make;
+      this.isCool = isCool;
+    }
+  }
+
+  let myFirstMotorcycle = new Motorcycle(2, 'black', 234, 'chevy', true);
+
+  console.log(myFirstMotorcycle);
